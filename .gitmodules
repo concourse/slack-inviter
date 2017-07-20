@@ -1,0 +1,3 @@
+[submodule "slackin"]
+	path = slackin
+	url = git@github.com:rauchg/slackin.git

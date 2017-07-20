@@ -1,0 +1,11 @@
+---
+applications:
+- name: slack-inviter
+  command: REPLACE_COMMAND
+  memory: 256M
+  disk_quota: 512M
+  instances: 2   # 2 allows for high-availability and zero-downtime deploys
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  host: slack
+  domain: concourse.ci
+  path: slackin
